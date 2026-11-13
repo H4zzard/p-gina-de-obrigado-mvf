@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#ff4d8d" />
+  <meta name="theme-color" content="#c76a86" />
   <title>Bem-vinda à Formação MVF</title>
   <meta name="description" content="Sua compra foi confirmada! Bem-vinda à Formação MVF." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,18 +11,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --rosa: #ff4d8d;
-      --rosa-forte: #e83a79;
-      --rosa-claro: #ff8fb8;
-      --rosa-suave: #ffe3ee;
-      --rosa-bg: #fff5f9;
-      --branco: #ffffff;
-      --texto: #3a2a33;
-      --texto-suave: #8a7680;
+      --rosa: #c76a86;         /* rosa nude mais escuro */
+      --rosa-forte: #a84d6b;   /* rosa amendoado profundo */
+      --rosa-claro: #e0a3b4;   /* rosa suave acinzentado */
+      --rosa-suave: #f3dcdf;   /* nude rosado claro */
+      --rosa-bg: #f6ece9;      /* fundo nude quente */
+      --branco: #fdf6f1;       /* "branco" nude / off-white */
+      --texto: #4a3238;        /* marrom-vinho suave */
+      --texto-suave: #9c8188;  /* nude acinzentado */
       --whatsapp: #25d366;
       --whatsapp-escuro: #1ebe5a;
-      --sombra: 0 20px 60px rgba(255, 77, 141, 0.18);
-      --sombra-suave: 0 8px 24px rgba(255, 77, 141, 0.12);
+      --sombra: 0 20px 60px rgba(168, 77, 107, 0.18);
+      --sombra-suave: 0 8px 24px rgba(168, 77, 107, 0.12);
     }
 
     * {
@@ -39,8 +39,8 @@
       font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
       color: var(--texto);
       background:
-        radial-gradient(circle at 15% 0%, #ffe3ee 0%, rgba(255, 227, 238, 0) 45%),
-        radial-gradient(circle at 85% 100%, #ffd6e7 0%, rgba(255, 214, 231, 0) 50%),
+        radial-gradient(circle at 15% 0%, #f3dcdf 0%, rgba(243, 220, 223, 0) 45%),
+        radial-gradient(circle at 85% 100%, #ead3cf 0%, rgba(234, 211, 207, 0) 50%),
         var(--rosa-bg);
       display: flex;
       align-items: center;
@@ -60,8 +60,8 @@
       z-index: 0;
       pointer-events: none;
     }
-    .blob-1 { width: 320px; height: 320px; background: #ffb3cf; top: -80px; left: -80px; }
-    .blob-2 { width: 260px; height: 260px; background: #ffc9dd; bottom: -60px; right: -70px; }
+    .blob-1 { width: 320px; height: 320px; background: #d9a6b2; top: -80px; left: -80px; }
+    .blob-2 { width: 260px; height: 260px; background: #e3c0bb; bottom: -60px; right: -70px; }
 
     .card {
       position: relative;
@@ -104,7 +104,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 12px 30px rgba(255, 77, 141, 0.4);
+      box-shadow: 0 12px 30px rgba(168, 77, 107, 0.4);
       position: relative;
       animation: pulso 2.6s ease-in-out infinite;
     }
@@ -362,7 +362,7 @@
 
     // Confete suave ao carregar (feito em canvas leve, sem bibliotecas)
     (function () {
-      const cores = ["#ff4d8d", "#ff8fb8", "#ffc9dd", "#ffffff", "#e83a79"];
+      const cores = ["#c76a86", "#e0a3b4", "#e3c0bb", "#fdf6f1", "#a84d6b"];
       const canvas = document.createElement("canvas");
       canvas.style.cssText = "position:fixed;inset:0;pointer-events:none;z-index:50;";
       document.body.appendChild(canvas);
